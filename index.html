@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" type="text/css" href="index.css">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form fahrizalirvadi</title>
+</head>
+
+<body>
+  <div class="container">
+    <h1 id="title"> Form Fahrizalirvandi</h1>
+    <p id="description">Please use fill the form before proceed</p>
+  </div>
+  <form action="" id="survey-form">
+    <div class="form-group">
+      <label id="name-label" for="form-name">Name</label>
+      <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required />
+    </div>
+    <div class="form-group">
+      <label id="email-label" for="form-email">Email</label>
+      <input type="email" name="email" id="email" class="form-control" placeholder="Enter your email" required />
+    </div>
+    <div class="form-group">
+      <label for="number" id="number-label">Age</label>
+        <input type="number" id="number" class="form-control" min="17" max="50" placeholder="Age" required>
+      </div>
+    <div class="form-group">
+    <label id="gender-label">Gender </label>
+    <select name="gender" id="dropdown" class="form-control" required>
+      <option value="female">Female</option>
+      <option value="male">Male</option>
+    </select>
+    </div>
+    <div class="form-group">
+      <p>What is your role?</p>
+      <label>
+        <input
+        type="checkbox"
+        name="user-role"
+        class="input-checkbox"
+        value="Core"
+        checked/>Core
+      </label>
+      <label>
+        <input
+        type="checkbox"
+        name="user-role"
+        class="input-checkbox"
+        value="tank"
+        checked/>tank
+      </label>
+      <label>
+        <input
+        type="checkbox"
+        name="user-role"
+        class="input-checkbox"
+        value="sidelane"
+        checked/>Sidelane
+      </label>
+      <label>
+        <input
+        type="checkbox"
+        name="user-role"
+        class="input-checkbox"
+        value="marksman"
+        checked/>Marksman
+      </label>
+      <label>
+        <input
+        type="checkbox"
+        name="user-role"
+        class="input-checkbox"radio
+        value="support"
+        checked/>Support
+      </label>
+      </div>
+      <div class="form-group">
+        <p>What is your rank?</p>
+        <label>
+          <input
+          type="radio"
+          name="user-rank"
+          class="input-radio"
+          value="epic"/> Epic
+          <input
+          type="radio"
+          name="user-rank"
+          class="input-radio"
+          value="legend"/> legend
+          <input
+          type="radio"
+          name="user-rank"
+          class="input-radio"
+          value="mythic"/> Mythic
+          <input
+          type="radio"
+          name="user-rank"
+          class="input-radio"
+          value="mythical-glory"/> Mythical Glory
+        </label>
+        <div class="form-group">
+          <p>Additional information</p>
+            <textarea name="comment" id="textarea" cols="30" rows="10" placeholder="enter your comment here..."></textarea>
+          </div>
+      </div>
+  <div class="form-group">
+    <button type="submit" id="submit">submit</button>
+  </div>
+</form>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
